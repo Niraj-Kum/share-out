@@ -1,8 +1,13 @@
 import { Client, Account, Databases, Storage, Avatars } from "appwrite";
 
 export const appwriteConfig = {
+    url: import.meta.env.VITE_SHARE_OUT_APPWRITE_URL,
     projectId: import.meta.env.VITE_SHARE_OUT_APPWRITE_PROJECT_ID,
-    url: import.meta.env.VITE_SHARE_OUT_APPWRITE_URL
+    databaseId: import.meta.env.VITE_SHARE_OUT_APPWRITE_DB_ID,
+    storageId: import.meta.env.VITE_SHARE_OUT_APPWRITE_STORAGE_ID,
+    saveCollectionId: import.meta.env.VITE_SHARE_OUT_APPWRITE_SAVES_COLLECTION_ID,
+    userCollectionId: import.meta.env.VITE_SHARE_OUT_APPWRITE_USERS_COLLECTION_ID,
+    postCollectionId: import.meta.env.VITE_SHARE_OUT_APPWRITE_POSTS_COLLECTION_ID,
 }
 
 export const client = new Client();
