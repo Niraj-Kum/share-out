@@ -14,13 +14,13 @@ import {
 import { Input } from "@/components/ui/input";
 
 import { z } from "zod";
-import { Loader } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useToast } from "@/components/ui/use-toast";
 import {
   useSignInAccount,
 } from "@/lib/react-query/queriesAndMutations";
 import { useUserContext } from "@/context/AuthContext";
+import Loader from "@/components/shared/Loader";
 
 const SigninForm = () => {
   const { toast } = useToast();
